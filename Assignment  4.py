@@ -1,28 +1,36 @@
 # **************QUESTION NO 1**************
-age= int(input("ENTER YOUR AGE : "))
+try :
+    age= int(input("ENTER YOUR AGE : "))
 
-if (age < 13) :
-    print ("******* You are a child ******* ")
+    if (age < 13) :
+        print ("******* You are a child ******* ")
 
-elif (age >=13) and (age<=19) :
-    print ("******* You are  a teenager *******")
+    elif (age >=13) and (age<=19) :
+        print ("******* You are  a teenager *******")
 
-elif (age >=20) and (age <=59):
-    print ("******* You are an adult *******")
+    elif (age >=20) and (age <=59):
+        print ("******* You are an adult *******")
 
-elif (age >=60) :
-    print ("******* You are a senior ******* ")
+    elif (age >=60) :
+        print ("******* You are a senior ******* ")
+except(ValueError):
+    print("Enter your current age ,Please try again ")
 print("")
 # **************QUESTION NO 2**************
 print("Enter a number below to find that the number is -ve ,+ve or zero; ")
-num =int(input("ENTER A NUMBER : "))
+while(True):
+    try:
+        num =int(input("ENTER A NUMBER : "))
 
-if (num < 0) :
-    print (" ******* This is a negative number *******")
-elif (num > 0):
-    print ("*******This is a positive number *******")
-elif (num ==0) :
-    print ("******* The number is zero *******")
+        if (num < 0) :
+            print (" ******* This is a negative number *******")
+        elif (num > 0):
+            print ("*******This is a positive number *******")
+        elif (num ==0) :
+            print ("******* The number is zero *******")
+    except(ValueError):
+        print("Please enter a valid number,try again")
+        break
 print("")
 # **************QUESTION NO 3**************
 #               part (i)
